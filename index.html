@@ -1,0 +1,990 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>perodicTable</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .Alkali{
+      background-color: #244D57;
+    }
+
+    .Metalloids{
+      background-color:  #034269;
+    }
+
+    .Actinides{
+      background-color: #45443F;
+    }
+
+    .Alkaline_earth{
+      background-color: #623842;
+    }
+
+    .Reactive_nonmetals{
+      background-color: #202124;
+    }
+    
+    .Unknown_properties{
+      background-color: #1F2123;
+    }
+
+    .Transition_metals{
+      background-color: #2F4D47;
+    }
+
+    .Noble_gases{
+      background-color: #875824 ;
+    }
+
+    .Post-transition_metals{
+      background-color: rgb(146, 60, 60);
+    }
+
+    .Lanthanides{
+      background-color: rgb(74, 74, 212);
+    }
+
+
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      /* border: 1px solid black; */
+      display: flex;
+      color: rgb(231, 231, 231);
+
+    }
+
+    .perodicTable {
+      width: min-content;
+      height: min-content;
+      /* border: 1px solid red; */
+      margin: auto;
+    }
+
+    .pHead {
+      padding: 15px 2px;
+      text-align: center;
+      color: crimson;
+      text-decoration: underline;
+    }
+
+    .pBody {
+      /* border: 1px solid yellow; */
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .colChild {
+      margin: 1px;
+      width: 60px;
+      height: 50px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+   
+
+    .colB {
+      display: flex;
+      justify-content: center;
+    }
+
+    span {
+      font-size: 9px;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+    }
+
+    h3 {
+      text-align: center;
+      position: relative;
+      left: 2px;
+    }
+
+    p {
+      font-size: 9px;
+      text-align: center;
+    }
+
+    .pBottom{
+      margin-top: 30px;
+    }
+
+    .colB .colChild{
+      background-color: rgb(74, 74, 212);
+    }
+
+    .col2 .colChild{
+      background-color: #202124;
+    }
+
+
+    .colChild:hover {
+      background-color: white;
+      color: black;
+      transform: scale(1.3);
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="perodicTable">
+
+      <div class="pHead">
+        <h2>Periodic Table</h2>
+      </div>
+
+
+      <div class="pBody">
+
+        <div class="col1">
+
+          <div class="colChild Reactive_nonmetals">
+            <span>1</span>
+            <h3>H</h3>
+            <p>Hydrogen</p>
+          </div>
+
+          <div class="colChild Alkali">
+            <span>3</span>
+            <h3>Li</h3>
+            <p>Lithium</p>
+          </div>
+
+          <div class="colChild Alkali">
+            <span>11</span>
+            <h3>Na</h3>
+            <p>Sodium</p>
+          </div>
+
+          <div class="colChild Alkali">
+            <span>19</span>
+            <h3>K</h3>
+            <p>Potassium</p>
+          </div>
+
+          <div class="colChild Alkali">
+            <span>37</span>
+            <h3>Rb</h3>
+            <p>Rubidium</p>
+          </div>
+
+          <div class="colChild Alkali">
+            <span>55</span>
+            <h3>Cs</h3>
+            <p>Caesium</p>
+          </div>
+
+          <div class="colChild Alkali">
+            <span>87</span>
+            <h3>Fr</h3>
+            <p>Francium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col2">
+
+          <div class="colChild Alkaline_earth">
+            <span>4</span>
+            <h3>Be</h3>
+            <p>Beryllium</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>12</span>
+            <h3>Mg</h3>
+            <p>Magnesium</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>20</span>
+            <h3>Ca</h3>
+            <p>Calcium</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>38</span>
+            <h3>Sr</h3>
+            <p>Strontium</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>56</span>
+            <h3>Ba</h3>
+            <p>Barium</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>88</span>
+            <h3>Ra</h3>
+            <p>Radium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col3">
+
+          <div class="colChild Transition_metals">
+            <span>21</span>
+            <h3>Sc</h3>
+            <p>Scandium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>39</span>
+            <h3>Y</h3>
+            <p>Yttrium</p>
+          </div>
+
+          <div class="colChild Lanthanides">
+            <span>57</span>
+            <h3>La</h3>
+            <p>Lanthanum</p>
+          </div>
+
+          <div class="colChild Noble_gases">
+            <span>89</span>
+            <h3>Ac</h3>
+            <p>Actinium</p>
+          </div>
+
+
+        </div>
+
+
+        <div class="col4">
+
+          <div class="colChild Transition_metals">
+            <span>22</span>
+            <h3>Ti</h3>
+            <p>Titanium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>40</span>
+            <h3>Zr</h3>
+            <p>Zirconium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>72</span>
+            <h3>Hf</h3>
+            <p>Hafnium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>104</span>
+            <h3>Rf</h3>
+            <p>Rutherfordium</p>
+          </div>
+
+
+        </div>
+
+
+        <div class="col5">
+
+          <div class="colChild Transition_metals">
+            <span>23</span>
+            <h3>V</h3>
+            <p>Vanadium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>41</span>
+            <h3>Nb</h3>
+            <p>Niobium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>73</span>
+            <h3>Ta</h3>
+            <p>Tantalum</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>105</span>
+            <h3>Db</h3>
+            <p>Dubnium</p>
+          </div>
+
+
+        </div>
+
+
+        <div class="col6">
+
+          <div class="colChild Transition_metals">
+            <span>24</span>
+            <h3>Cr</h3>
+            <p>Chromium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>42</span>
+            <h3>Mo</h3>
+            <p>Molybdenum</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>74</span>
+            <h3>W</h3>
+            <p>Tungsten</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>106</span>
+            <h3>Sg</h3>
+            <p>Seaborgium</p>
+          </div>
+
+
+        </div>
+
+
+        <div class="col7">
+
+          <div class="colChild Transition_metals">
+            <span>25</span>
+            <h3>Mn</h3>
+            <p>Manganese</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>43</span>
+            <h3>Tc</h3>
+            <p>Technetium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>75</span>
+            <h3>Re</h3>
+            <p>Rhenium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>107</span>
+            <h3>Bh</h3>
+            <p>Bohrium</p>
+          </div>
+
+
+        </div>
+
+
+        <div class="col8 ">
+
+          <div class="colChild Transition_metals">
+            <span>26</span>
+            <h3>Fe</h3>
+            <p>Iron</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>44</span>
+            <h3>Ru</h3>
+            <p>Ruthenium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>76</span>
+            <h3>Os</h3>
+            <p>Osmium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>108</span>
+            <h3>Hs</h3>
+            <p>Hassium</p>
+          </div>
+
+
+        </div>
+
+
+        
+        <div class="col9 ">
+
+          <div class="colChild Transition_metals">
+            <span>27</span>
+            <h3>Co</h3>
+            <p>Cobalt</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>45</span>
+            <h3>Rh</h3>
+            <p>Rhodium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>77</span>
+            <h3>Ir</h3>
+            <p>Iridium</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>109</span>
+            <h3>Mt</h3>
+            <p>Meitnerium</p>
+          </div>
+
+
+        </div>
+
+
+        <div class="col10 ">
+
+          <div class="colChild Transition_metals">
+            <span>28</span>
+            <h3>Ni</h3>
+            <p>Nickel</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>46</span>
+            <h3>Pd</h3>
+            <p>Palladium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>78</span>
+            <h3>Pt</h3>
+            <p>Platinum</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>110</span>
+            <h3>Ds</h3>
+            <p>Darmstadtium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col11 ">
+
+          <div class="colChild Transition_metals">
+            <span>29</span>
+            <h3>Cu</h3>
+            <p>Copper</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>47</span>
+            <h3>Ag</h3>
+            <p>Silver</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>79</span>
+            <h3>Au</h3>
+            <p>Gold</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>111</span>
+            <h3>Rg</h3>
+            <p>Roentgenium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col12 ">
+
+          <div class="colChild Transition_metals">
+            <span>30</span>
+            <h3>Zn</h3>
+            <p>Zinc</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>48</span>
+            <h3>Cd</h3>
+            <p>Cadmium</p>
+          </div>
+
+          <div class="colChild Transition_metals">
+            <span>80</span>
+            <h3>Hg</h3>
+            <p>Mercury</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>112</span>
+            <h3>Cn</h3>
+            <p>Copernicium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col13">
+
+          <div class="colChild Metalloids">
+            <span>5</span>
+            <h3>B</h3>
+            <p>Boron</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>13</span>
+            <h3>Al</h3>
+            <p>Aluminium</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>31</span>
+            <h3>Ga</h3>
+            <p>Gallium</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>49</span>
+            <h3>In</h3>
+            <p>Indium</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>81</span>
+            <h3>Ti</h3>
+            <p>Thallium</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>113</span>
+            <h3>Nh</h3>
+            <p>Nihonium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col14">
+
+          <div class="colChild Alkaline_earth">
+            <span>6</span>
+            <h3>C</h3>
+            <p>Carbon</p>
+          </div>
+
+          <div class="colChild Metalloids">
+            <span>14</span>
+            <h3>Si</h3>
+            <p>Silicon</p>
+          </div>
+
+          <div class="colChild Metalloids">
+            <span>32</span>
+            <h3>Ge</h3>
+            <p>Germanium</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>50</span>
+            <h3>Sn</h3>
+            <p>Tin</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>82</span>
+            <h3>Pb</h3>
+            <p>Lead</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>114</span>
+            <h3>Fl</h3>
+            <p>Flerovium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col15">
+
+          <div class="colChild Alkaline_earth">
+            <span>7</span>
+            <h3>N</h3>
+            <p>Nitrogen</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>15</span>
+            <h3>P</h3>
+            <p>Phosphorus</p>
+          </div>
+
+          <div class="colChild Metalloids">
+            <span>33</span>
+            <h3>As</h3>
+            <p>Arsenic</p>
+          </div>
+
+          <div class="colChild Metalloids">
+            <span>51</span>
+            <h3>Sb</h3>
+            <p>Antimony</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>83</span>
+            <h3>Bi</h3>
+            <p>Bismuth</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>115</span>
+            <h3>Mc</h3>
+            <p>Moscovium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col16">
+
+          <div class="colChild Alkaline_earth">
+            <span>8</span>
+            <h3>O</h3>
+            <p>Oxygen</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>16</span>
+            <h3>S</h3>
+            <p>Sulfur</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>34</span>
+            <h3>Se</h3>
+            <p>Selenium</p>
+          </div>
+
+          <div class="colChild Metalloids">
+            <span>52</span>
+            <h3>Te</h3>
+            <p>Tellurium</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>84</span>
+            <h3>Po</h3>
+            <p>Polonium</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>116</span>
+            <h3>Lv</h3>
+            <p>Livermorium</p>
+          </div>
+
+        </div>
+
+
+        <div class="col17">
+
+          <div class="colChild Alkaline_earth">
+            <span>9</span>
+            <h3>F</h3>
+            <p>Fluorine</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>17</span>
+            <h3>Cl</h3>
+            <p>Chlorine</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>35</span>
+            <h3>Br</h3>
+            <p>Bromine</p>
+          </div>
+
+          <div class="colChild Alkaline_earth">
+            <span>53</span>
+            <h3>I</h3>
+            <p>Iodine</p>
+          </div>
+
+          <div class="colChild Post-transition_metals">
+            <span>85</span>
+            <h3>At</h3>
+            <p>Astatine</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>117</span>
+            <h3>Ts</h3>
+            <p>Tennessine</p>
+          </div>
+
+        </div>
+
+
+        <div class="col17">
+
+          <div class="colChild Noble_gases">
+            <span>2</span>
+            <h3>He</h3>
+            <p>Helium</p>
+          </div>
+
+          <div class="colChild Noble_gases">
+            <span>10</span>
+            <h3>Ne</h3>
+            <p>Neon</p>
+          </div>
+
+          <div class="colChild Noble_gases">
+            <span>18</span>
+            <h3>Ar</h3>
+            <p>Argon</p>
+          </div>
+
+          <div class="colChild Noble_gases">
+            <span>36</span>
+            <h3>Kr</h3>
+            <p>Krypton</p>
+          </div>
+
+          <div class="colChild Noble_gases">
+            <span>54</span>
+            <h3>Ze</h3>
+            <p>Xenon</p>
+          </div>
+
+          <div class="colChild Noble_gases">
+            <span>86</span>
+            <h3>Rn</h3>
+            <p>Radon</p>
+          </div>
+
+          <div class="colChild Unknown_properties">
+            <span>118</span>
+            <h3>Og</h3>
+            <p>Oganesson</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="pBottom">
+
+        <div class="colB">
+
+          <div class="colChild">
+            <span>58</span>
+            <h3>Ce</h3>
+            <p>Cerium</p>
+          </div>
+
+          <div class="colChild">
+            <span>59</span>
+            <h3>Pr</h3>
+            <p>Praseodymium</p>
+          </div>
+
+          <div class="colChild">
+            <span>60</span>
+            <h3>Nd</h3>
+            <p>Neodymium</p>
+          </div>
+
+          <div class="colChild">
+            <span>61</span>
+            <h3>Pm</h3>
+            <p>Promethium</p>
+          </div>
+
+          <div class="colChild">
+            <span>62</span>
+            <h3>Sm</h3>
+            <p>Samarium</p>
+          </div>
+
+          <div class="colChild">
+            <span>63</span>
+            <h3>Eu</h3>
+            <p>Europium</p>
+          </div>
+
+          <div class="colChild">
+            <span>64</span>
+            <h3>Gd</h3>
+            <p>Gadolinium.</p>
+          </div>
+
+          <div class="colChild">
+            <span>65</span>
+            <h3>Tb</h3>
+            <p>Terbium</p>
+          </div>
+
+          <div class="colChild">
+            <span>66</span>
+            <h3>Dy</h3>
+            <p>Dysprosium</p>
+          </div>
+
+          <div class="colChild">
+            <span>67</span>
+            <h3>Ho</h3>
+            <p>Holmium</p>
+          </div>
+
+          <div class="colChild">
+            <span>68</span>
+            <h3>Er</h3>
+            <p>Erbium</p>
+          </div>
+
+          <div class="colChild">
+            <span>69</span>
+            <h3>Tm</h3>
+            <p>Thulium</p>
+          </div>
+
+          <div class="colChild">
+            <span>70</span>
+            <h3>Yb</h3>
+            <p>Ytterbium</p>
+          </div>
+
+          <div class="colChild">
+            <span>71</span>
+            <h3>Lu</h3>
+            <p>Lutetium</p>
+          </div>
+
+
+        </div>
+
+
+        <div class="colB col2">
+
+          <div class="colChild">
+            <span>90</span>
+            <h3>Th</h3>
+            <p>Thorium</p>
+          </div>
+
+          <div class="colChild">
+            <span>91</span>
+            <h3>Pa</h3>
+            <p>Protactinium</p>
+          </div>
+
+          <div class="colChild">
+            <span>92</span>
+            <h3>U</h3>
+            <p>Uranium</p>
+          </div>
+
+          <div class="colChild">
+            <span>93</span>
+            <h3>Np</h3>
+            <p>Neptunium</p>
+          </div>
+
+          <div class="colChild">
+            <span>94</span>
+            <h3>Pu</h3>
+            <p>Plutonium</p>
+          </div>
+
+          <div class="colChild">
+            <span>95</span>
+            <h3>Am</h3>
+            <p>Americium</p>
+          </div>
+
+          <div class="colChild">
+            <span>96</span>
+            <h3>Cm</h3>
+            <p>Curium.</p>
+          </div>
+
+          <div class="colChild">
+            <span>97</span>
+            <h3>Bk</h3>
+            <p>Berkelium</p>
+          </div>
+
+          <div class="colChild">
+            <span>98</span>
+            <h3>Cf</h3>
+            <p>Californium</p>
+          </div>
+
+          <div class="colChild">
+            <span>99</span>
+            <h3>Es</h3>
+            <p>Einsteinium</p>
+          </div>
+
+          <div class="colChild">
+            <span>100</span>
+            <h3>Fm</h3>
+            <p>Fermium</p>
+          </div>
+
+          <div class="colChild">
+            <span>101</span>
+            <h3>Md</h3>
+            <p>Mendelevium</p>
+          </div>
+
+          <div class="colChild">
+            <span>102</span>
+            <h3>No</h3>
+            <p>Nobelium</p>
+          </div>
+
+          <div class="colChild">
+            <span>103</span>
+            <h3>Lr</h3>
+            <p>Lawrencium</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
